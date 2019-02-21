@@ -1,0 +1,204 @@
+
+@font-face {
+    font-family: TruthCYR-Regular;
+    src: url(font/TruthCYR-Regular.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+.main-wrapper {
+    position: relative;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(./imgs/bg.png);
+    background-size: cover;
+    .header-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 88px;
+        .img-header {
+            z-index: 2;
+            position: absolute;        
+            img {
+                width: 190px;
+            }
+        }
+        .bg-header {
+            height: 88px;
+            background-color: #5e1309;
+            opacity: 0.9;
+            position: relative;
+            width: 100%;
+        }
+    }
+    .align-wr {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .registration-form-wrapper {
+        position: relative;
+        margin-bottom: 65px;
+        max-width: 448px;
+        width: 100%;
+        .registration-form {
+            max-width: 448px;
+            width: 100%;
+            .header-registration-form-wrapper {
+                position: relative;
+                height: 62px;
+                background-image: url(./imgs/Rectangle.png);
+                    .close-button {
+                        width: 22px;
+                        height: 22px;
+                        padding-top: 7px;
+                        padding-left: 10px;
+                        button {
+                            background: none;
+                            border: none;
+                            outline: none;
+                            background-image: url(./imgs/close_button.png);
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                .header-logo-wrapper {
+                    position: absolute;
+                    top: -60px;
+                    left: 30%;
+                }
+            }
+            .gradient-header-wrapper {
+                background-image: url(./imgs/Rectangle_gradient.png);
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .header-text {
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    font-family: TruthCYR-Regular;
+                    font-size: 20px;
+                }
+                
+            }
+            .form-wrapper {
+                background-color: #f5f1f1;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 271px;
+                    margin: 0 auto;
+                    input {
+                        font-family: TruthCYR-Regular;
+                        outline: none;
+                        border-width: 0.88px;
+                        border-color: rgb(32, 173, 191);
+                        border-style: solid;
+                        border-radius: 18px;
+                        background-color: rgb(255, 255, 255);
+                        width: 271px;
+                        height: 44px;
+                        padding-left: 15px;
+                        &:first-child {
+                            margin-top: 25px;
+                        }
+                        margin-bottom: 7px; 
+                    }
+                }
+                .button-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    padding-left: 15px;
+                    padding-bottom: 25px;
+                    button {
+                        outline: none;
+                        font-family: TruthCYR-Regular;
+                        color: #000000;
+                        text-transform: uppercase;
+                        background: none;
+                        border: none;
+                        background-image: url(./imgs/green_button.png);
+                        width: 287px;
+                        height: 63px;
+                        padding-left: 30px;
+                    }
+                }
+            }
+            .registration-footer {
+                height: 52px;
+                background-image: url(./imgs/reg_footer_form.png);
+                
+            }
+        }
+        .wizard-wrapper {
+            position: absolute;
+            bottom: -3px;
+            left: calc(100% - 107px);
+            img {
+                width: 100%;
+                min-width: 600px;
+                height: auto;
+            }
+        }
+    }
+
+    .footer-wrapper {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Montserrat-Regular;
+            color: #ffffff;
+            position: absolute;
+            font-size: 14px;
+            z-index: 2;
+            margin: 0 auto;
+        }
+        .footer-bg {
+            background-color: #3f1e01;
+            height: 52px;
+
+            opacity: 0.8;
+            width: 100%;
+        }
+    }  
+}
+
+@media only screen and (max-width: 1440px) {
+    .wizard-wrapper {
+        left: calc(100% - 62px)!important;
+        img {
+            min-width: 300px!important;
+        }
+    }
+
+
+
+    @media only screen and (max-width: 900px) {
+        .wizard-wrapper {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 360px) and (max-width: 375px) {
+        .main-wrapper .registration-form-wrapper .registration-form .header-registration-form-wrapper .header-logo-wrapper img{
+            display: none!important;
+        }
+    }
+}

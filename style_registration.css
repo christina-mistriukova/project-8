@@ -1,0 +1,195 @@
+@font-face {
+  font-family: TruthCYR-Regular;
+  src: url(font/TruthCYR-Regular.otf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(font/Montserrat-Regular.ttf);
+}
+.main-wrapper {
+  position: relative;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url(./imgs/bg.png);
+  background-size: cover;
+}
+.main-wrapper .header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+}
+.main-wrapper .header-wrapper .img-header {
+  z-index: 2;
+  position: absolute;
+}
+.main-wrapper .header-wrapper .img-header img {
+  width: 190px;
+}
+.main-wrapper .header-wrapper .bg-header {
+  height: 88px;
+  background-color: #5e1309;
+  opacity: 0.9;
+  position: relative;
+  width: 100%;
+}
+.main-wrapper .align-wr {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrapper .registration-form-wrapper {
+  position: relative;
+  margin-bottom: 65px;
+  max-width: 448px;
+  width: 100%;
+}
+.main-wrapper .registration-form-wrapper .registration-form {
+  max-width: 448px;
+  width: 100%;
+}
+.main-wrapper .registration-form-wrapper .registration-form .header-registration-form-wrapper {
+  position: relative;
+  height: 62px;
+  background-image: url(./imgs/Rectangle.png);
+}
+.main-wrapper .registration-form-wrapper .registration-form .header-registration-form-wrapper .close-button {
+  width: 22px;
+  height: 22px;
+  padding-top: 7px;
+  padding-left: 10px;
+}
+.main-wrapper .registration-form-wrapper .registration-form .header-registration-form-wrapper .close-button button {
+  background: none;
+  border: none;
+  outline: none;
+  background-image: url(./imgs/close_button.png);
+  width: 22px;
+  height: 22px;
+}
+.main-wrapper .registration-form-wrapper .registration-form .header-registration-form-wrapper .header-logo-wrapper {
+  position: absolute;
+  top: -60px;
+  left: 30%;
+}
+.main-wrapper .registration-form-wrapper .registration-form .gradient-header-wrapper {
+  background-image: url(./imgs/Rectangle_gradient.png);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrapper .registration-form-wrapper .registration-form .gradient-header-wrapper .header-text {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: TruthCYR-Regular;
+  font-size: 20px;
+}
+.main-wrapper .registration-form-wrapper .registration-form .form-wrapper {
+  background-color: #f5f1f1;
+}
+.main-wrapper .registration-form-wrapper .registration-form .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  width: 271px;
+  margin: 0 auto;
+}
+.main-wrapper .registration-form-wrapper .registration-form .form-wrapper form input {
+  font-family: TruthCYR-Regular;
+  outline: none;
+  border-width: 0.88px;
+  border-color: #20adbf;
+  border-style: solid;
+  border-radius: 18px;
+  background-color: white;
+  width: 271px;
+  height: 44px;
+  padding-left: 15px;
+  margin-bottom: 7px;
+}
+.main-wrapper .registration-form-wrapper .registration-form .form-wrapper form input:first-child {
+  margin-top: 25px;
+}
+.main-wrapper .registration-form-wrapper .registration-form .form-wrapper .button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-bottom: 25px;
+}
+.main-wrapper .registration-form-wrapper .registration-form .form-wrapper .button-wrapper button {
+  outline: none;
+  font-family: TruthCYR-Regular;
+  color: #000000;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  background-image: url(./imgs/green_button.png);
+  width: 287px;
+  height: 63px;
+  padding-left: 30px;
+}
+.main-wrapper .registration-form-wrapper .registration-form .registration-footer {
+  height: 52px;
+  background-image: url(./imgs/reg_footer_form.png);
+}
+.main-wrapper .registration-form-wrapper .wizard-wrapper {
+  position: absolute;
+  bottom: -3px;
+  left: calc(100% - 107px);
+}
+.main-wrapper .registration-form-wrapper .wizard-wrapper img {
+  width: 100%;
+  min-width: 600px;
+  height: auto;
+}
+.main-wrapper .footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrapper .footer-wrapper footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat-Regular;
+  color: #ffffff;
+  position: absolute;
+  font-size: 14px;
+  z-index: 2;
+  margin: 0 auto;
+}
+.main-wrapper .footer-wrapper .footer-bg {
+  background-color: #3f1e01;
+  height: 52px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .wizard-wrapper {
+    left: calc(100% - 62px) !important;
+  }
+  .wizard-wrapper img {
+    min-width: 300px !important;
+  }
+}
+@media only screen and (max-width: 1440px) and (max-width: 900px) {
+  .wizard-wrapper {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 360px) and (max-width: 375px) {
+  .main-wrapper .registration-form-wrapper .registration-form .header-registration-form-wrapper .header-logo-wrapper img {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style_registration.css.map */
